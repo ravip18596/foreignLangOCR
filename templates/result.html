@@ -1,0 +1,6 @@
+{% block content %}
+<strong> OCR of above hindi image is <br></strong>
+    {% for line in response %}
+    <p> {{ line }}</p>
+    {% endfor %}
+{% endblock %}
