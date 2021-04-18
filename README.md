@@ -3,6 +3,8 @@ Hindi Lang Image OCR
 
 Django Application using `TesserOCR` and `pytesseract` library
 
+Currently deployed a demo at https://ravip18596.pythonanywhere.com/
+
 ## Steps to run locally
 
 1) Set necessary env vars for MySQL database connection [foreignLangOCR/wsgi.py](foreignLangOCR/wsgi.py)
