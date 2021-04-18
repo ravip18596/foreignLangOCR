@@ -1,0 +1,6 @@
+**/migrations/
+venv/
+*.jpg
+*.png
+secrets
+.idea

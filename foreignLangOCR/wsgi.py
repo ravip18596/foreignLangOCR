@@ -13,6 +13,9 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'foreignLangOCR.settings')
 os.environ.setdefault('TESSDATA_PREFIX', os.getcwd() + '/tessdata2')
+os.environ.setdefault('DB_HOST', 'docker.host.internal')
+os.environ.setdefault('DB_USER', 'root')
+
 os.environ.setdefault('LC_ALL','C')
 
 application = get_wsgi_application()

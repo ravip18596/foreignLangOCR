@@ -20,6 +20,6 @@ RUN pip install gunicorn
 
 ENV PYTHONUNBUFFERED 1
 
-EXPOSE 6050
+EXPOSE 8000
 
-CMD ["gunicorn",  "--bind", "0.0.0.0:6050", "foreignLangOCR.wsgi:application"]
+CMD ["gunicorn",  "--bind", "0.0.0.0:8000", "foreignLangOCR.wsgi:application"]

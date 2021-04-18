@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: gunicorn --timeout 300 foreignLangOCR.wsgi:application --bind 0.0.0.0:8000
+    image: ravip18596/hindi-ocr-repo:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - TESSDATA_PREFIX=/app/tessdata2
+      - DJANGO_SETTINGS_MODULE=foreignLangOCR.settings
+      - DB_HOST=docker.host.internal
+      - LC_ALL=C
+    env_file:
+      - ./secrets
