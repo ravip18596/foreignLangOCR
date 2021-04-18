@@ -11,5 +11,5 @@ Currently deployed a demo at https://ravip18596.pythonanywhere.com/
 2) Run at the root of repo `gunicorn --bind 127.0.0.1:8000 foreignLangOCR.wsgi:application`
 
 ## Run docker container
-
-`docker-compose -f docker-compose.yml up`
+1) Create `secrets` file to export env vars
+2) `docker-compose -f docker-compose.yml up`
